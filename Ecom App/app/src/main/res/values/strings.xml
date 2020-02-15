@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ecom</string>
     <string name="password">PassWord</string>
+    <string name="already_have_an_account">Already Have an Account ?</string>
 </resources>
