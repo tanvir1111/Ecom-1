@@ -1,198 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/prd_card"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prd_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        app:cardElevation="3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
+                <ImageView
+                    android:id="@+id/prd_img"
+                    android:layout_width="330dp"
+                    android:layout_height="353dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shirt"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/prd_img"
-                android:layout_width="330dp"
-                android:layout_height="353dp"
+                <TextView
+                    android:id="@+id/prd_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/status_round_shape"
+                    android:gravity="center"
+                    android:text="In Stock"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/prd_img"
+                    app:layout_constraintHorizontal_bias="0.461"
+                    app:layout_constraintStart_toStartOf="@+id/prd_img"
+                    app:layout_constraintTop_toTopOf="@+id/prd_img" />
 
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Title:Facebook women t-shirt"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/price"
+                    app:layout_constraintEnd_toEndOf="@+id/prd_img"
+                    app:layout_constraintStart_toStartOf="@+id/prd_img"
+                    app:layout_constraintTop_toBottomOf="@id/prd_img"
+                    app:layout_constraintVertical_bias="0.631" />
 
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/shirt"
-                app:layout_constraintDimensionRatio="w,1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="price: $20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/title" />
 
-            <TextView
-                android:id="@+id/prd_status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/status_round_shape"
-                android:gravity="center"
-                android:text="In Stock"
-                android:textSize="9sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/prd_img"
-                app:layout_constraintHorizontal_bias="0.461"
-                app:layout_constraintStart_toStartOf="@+id/prd_img"
-                app:layout_constraintTop_toTopOf="@+id/prd_img" />
+                <ImageView
+                    android:id="@+id/ratingimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/star"
+                    app:layout_constraintBottom_toBottomOf="@+id/price"
+                    app:layout_constraintStart_toEndOf="@+id/price"
+                    app:layout_constraintTop_toTopOf="@+id/price"
+                    app:layout_constraintVertical_bias="0.333" />
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="4.5"
+                    app:layout_constraintBottom_toBottomOf="@+id/ratingimg"
+                    app:layout_constraintStart_toEndOf="@+id/ratingimg"
+                    app:layout_constraintTop_toTopOf="@+id/ratingimg" />
 
-                android:text="Title:Facebook women t-shirt"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/price"
-                app:layout_constraintEnd_toEndOf="@+id/prd_img"
-                app:layout_constraintStart_toStartOf="@+id/prd_img"
-                app:layout_constraintTop_toBottomOf="@id/prd_img"
-                app:layout_constraintVertical_bias="0.631" />
-
-            <TextView
-                android:id="@+id/price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:text="price: $20"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/title" />
-
-            <ImageView
-                android:id="@+id/ratingimg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-
-
-                android:src="@drawable/star"
-
-                app:layout_constraintBottom_toBottomOf="@+id/price"
-                app:layout_constraintStart_toEndOf="@+id/price"
-                app:layout_constraintTop_toTopOf="@+id/price"
-                app:layout_constraintVertical_bias="0.333" />
-
-            <TextView
-                android:id="@+id/rating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-
-                android:text="4.5"
-                app:layout_constraintBottom_toBottomOf="@+id/ratingimg"
-                app:layout_constraintStart_toEndOf="@+id/ratingimg"
-                app:layout_constraintTop_toTopOf="@+id/ratingimg" />
-
-            <Button
-                android:id="@+id/addToCart"
-                android:layout_width="71dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/buttton_wide"
-                android:text="Add to cart"
-                android:textColor="@color/textColor"
-                android:textSize="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/rating"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/rating"
-                app:layout_constraintVertical_bias="0.642" />
+                <Button
+                    android:id="@+id/addToCart"
+                    android:layout_width="71dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/buttton_wide"
+                    android:text="Add to cart"
+                    android:textColor="@color/textColor"
+                    android:textSize="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rating"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rating"
+                    app:layout_constraintVertical_bias="0.642" />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/buy"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/signup_round_shape"
-
-        android:text="BUY"
-
-        android:textColor="@color/textColor"
-        android:translationZ="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/prd_card"
-        app:layout_constraintEnd_toEndOf="@+id/prd_card"
-        app:layout_constraintTop_toBottomOf="@+id/prd_card" />
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/signup_round_shape"
+            android:text="BUY"
+            android:textColor="@color/textColor"
+            android:translationZ="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/prd_card"
+            app:layout_constraintEnd_toEndOf="@+id/prd_card"
+            app:layout_constraintTop_toBottomOf="@+id/prd_card" />
 
 
-    <TextView
-        android:id="@+id/itemdetailsHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/itemdetailsHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Item Details:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/itemdetailstxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/itemdetailstxt" />
 
-        android:layout_marginStart="20dp"
-        android:text="Item Details:"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/itemdetailstxt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/itemdetailstxt" />
+        <TextView
+            android:id="@+id/itemdetailstxt"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Chest-38  height-30 price-800 BDT"
+            app:layout_constraintStart_toEndOf="@+id/itemdetailsHead"
+            app:layout_constraintTop_toBottomOf="@+id/prd_card" />
 
-    <TextView
-        android:id="@+id/itemdetailstxt"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="Chest-38  height-30 price-800 BDT"
-        app:layout_constraintStart_toEndOf="@+id/itemdetailsHead"
-        app:layout_constraintTop_toBottomOf="@+id/prd_card" />
+        <TextView
+            android:id="@+id/descriptionHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Description:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/itemdetailsHead"
+            app:layout_constraintTop_toBottomOf="@+id/itemdetailsHead" />
 
-    <TextView
-        android:id="@+id/descriptionHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Description:"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/itemdetailsHead"
-        app:layout_constraintTop_toBottomOf="@+id/itemdetailsHead" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="30dp"
-        android:padding="3dp"
-        android:text="This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/descriptionHead"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionHead"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:padding="3dp"
+            android:text="This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing This product is amazing "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/descriptionHead"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionHead"
+            app:layout_constraintVertical_bias="0.0" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>
