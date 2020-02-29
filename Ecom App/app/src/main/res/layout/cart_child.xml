@@ -3,8 +3,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="10dp"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
 
     <Button
         android:id="@+id/button2"
@@ -14,7 +15,6 @@
         android:background="@drawable/buttton_wide"
         android:text="Remove"
         android:textColor="@color/textColor"
-
         android:translationZ="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView3"
         app:layout_constraintEnd_toStartOf="@+id/button"
@@ -56,7 +56,6 @@
                 android:id="@+id/imageView4"
                 android:layout_width="85dp"
                 android:layout_height="110dp"
-
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
@@ -72,7 +71,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:padding="5dp"
-
                 android:text="Title :"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -81,28 +79,23 @@
 
             <TextView
                 android:id="@+id/priceHead"
-                android:textStyle="bold"
-                android:textSize="14sp"
-
-
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Price :"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/pricetxt"
                 app:layout_constraintStart_toStartOf="@+id/titleHead"
                 app:layout_constraintTop_toTopOf="@+id/pricetxt" />
 
             <TextView
                 android:id="@+id/discountHead"
-                android:textStyle="bold"
-
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Discount :"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/discounttxt"
                 app:layout_constraintStart_toStartOf="@+id/priceHead"
                 app:layout_constraintTop_toBottomOf="@+id/pricetxt"
@@ -110,13 +103,12 @@
 
             <TextView
                 android:id="@+id/totalHead"
-                android:textStyle="bold"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="40dp"
                 android:padding="5dp"
                 android:text="Total :"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/totaltxt"
                 app:layout_constraintStart_toStartOf="@+id/discountHead"
                 app:layout_constraintTop_toTopOf="@+id/totaltxt"
@@ -124,29 +116,27 @@
 
             <TextView
                 android:id="@+id/titletxt"
-                android:textStyle="bold"
-                android:textSize="14sp"
-
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="5dp"
                 android:padding="5dp"
                 android:text="Facebook T-Shirt"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/pricetxt"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/pricetxt"
-                android:textStyle="bold"
-
-                android:textSize="14sp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:padding="5dp"
                 android:text="$20"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/discounttxt"
@@ -154,14 +144,13 @@
 
             <TextView
                 android:id="@+id/discounttxt"
-                android:textStyle="bold"
-                android:textSize="14sp"
-
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:padding="5dp"
                 android:text="$0"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/totaltxt"
@@ -169,15 +158,14 @@
 
             <TextView
                 android:id="@+id/totaltxt"
-                android:textStyle="bold"
-                android:textSize="14sp"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginBottom="40dp"
                 android:padding="5dp"
                 android:text="$20"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

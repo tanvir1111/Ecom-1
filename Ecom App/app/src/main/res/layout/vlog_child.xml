@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -21,7 +21,7 @@
             android:padding="5dp">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/vlog_pic"
                 android:layout_width="125dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="5dp"
@@ -33,24 +33,24 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/vlog_comments_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/comment_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-                app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                app:layout_constraintBottom_toBottomOf="@+id/vlog_pic"
+                app:layout_constraintEnd_toStartOf="@+id/vlog_stats_pic"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/vlog_title" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/vlog_stats_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="64dp"
                 android:src="@drawable/stats_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintBottom_toBottomOf="@+id/vlog_comments_pic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/vlog_comments_pic"
                 app:layout_constraintVertical_bias="0.666" />
 
             <TextView
@@ -64,8 +64,8 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView6"
-                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+                app:layout_constraintStart_toEndOf="@+id/vlog_pic"
+                app:layout_constraintTop_toTopOf="@+id/vlog_pic" />
 
             <TextView
                 android:id="@+id/num_of_comments"
@@ -74,9 +74,9 @@
                 android:text="2.7k"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-                app:layout_constraintStart_toEndOf="@+id/imageView7"
-                app:layout_constraintTop_toTopOf="@+id/imageView7"
+                app:layout_constraintBottom_toBottomOf="@+id/vlog_comments_pic"
+                app:layout_constraintStart_toEndOf="@+id/vlog_comments_pic"
+                app:layout_constraintTop_toTopOf="@+id/vlog_comments_pic"
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
@@ -87,9 +87,9 @@
                 android:text="1k"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                app:layout_constraintStart_toEndOf="@+id/imageView8"
-                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:layout_constraintBottom_toBottomOf="@+id/vlog_stats_pic"
+                app:layout_constraintStart_toEndOf="@+id/vlog_stats_pic"
+                app:layout_constraintTop_toTopOf="@+id/vlog_stats_pic"
                 app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
