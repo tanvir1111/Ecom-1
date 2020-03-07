@@ -35,7 +35,7 @@
                 android:id="@+id/playbtn_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/playBtn"
+                android:src="@drawable/playbtn"
                 app:layout_constraintBottom_toBottomOf="@+id/vvlog_pic"
                 app:layout_constraintEnd_toEndOf="@+id/vvlog_pic"
                 app:layout_constraintStart_toStartOf="@+id/vvlog_pic"

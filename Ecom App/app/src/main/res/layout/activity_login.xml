@@ -13,7 +13,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/log_logo"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:background="@drawable/logo_round_shape"
@@ -94,7 +94,7 @@
 
 
                 <EditText
-                    android:id="@+id/emailId"
+                    android:id="@+id/log_emailId"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -117,14 +117,14 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/emailId"
+                    app:layout_constraintEnd_toEndOf="@+id/log_emailId"
                     app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="@+id/emailId"
-                    app:layout_constraintTop_toBottomOf="@+id/emailId" />
+                    app:layout_constraintStart_toStartOf="@+id/log_emailId"
+                    app:layout_constraintTop_toBottomOf="@+id/log_emailId" />
 
 
                 <EditText
-                    android:id="@+id/passwordId"
+                    android:id="@+id/log_passwordId"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -150,12 +150,12 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/signbtn"
-                    app:layout_constraintTop_toBottomOf="@+id/passwordId"
+                    app:layout_constraintEnd_toStartOf="@+id/log_signbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/log_passwordId"
                     app:layout_constraintVertical_bias="0.515" />
 
                 <ImageView
-                    android:id="@+id/signbtn"
+                    android:id="@+id/log_signbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -164,8 +164,8 @@
                     android:background="@drawable/signup_round_shape"
                     android:src="@drawable/ic_arrow_forward_black_24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/passwordId"
-                    app:layout_constraintTop_toBottomOf="@+id/passwordId"
+                    app:layout_constraintEnd_toEndOf="@+id/log_passwordId"
+                    app:layout_constraintTop_toBottomOf="@+id/log_passwordId"
                     app:layout_constraintVertical_bias="0.0" />
 
 
@@ -175,7 +175,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/log_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -183,13 +183,13 @@
             android:text="Sing Up"
             android:textColor="@color/textColorDark"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintBottom_toBottomOf="@+id/log_forgot"
             app:layout_constraintStart_toStartOf="@+id/cardView2"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/log_forgot"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/log_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -201,7 +201,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/cardView2"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toEndOf="@+id/log_signup"
             app:layout_constraintTop_toBottomOf="@id/cardView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
