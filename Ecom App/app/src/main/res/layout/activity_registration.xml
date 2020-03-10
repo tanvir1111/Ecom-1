@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
-    tools:context=".reg.Registration">
+    tools:context=".Registration">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       >
+        android:background="#ffffff">
 
         <ImageView
             android:id="@+id/reg_imageView2"
@@ -24,8 +24,6 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_margin="10dp"
-
             android:id="@+id/reg_cardView"
             android:layout_width="match_parent"
             android:layout_height="130dp"
@@ -53,7 +51,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.constraintlayout.widget.Guideline
+        <android.support.constraint.Guideline
             android:id="@+id/reg_guideline"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -61,8 +59,6 @@
             app:layout_constraintGuide_begin="342dp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_margin="10dp"
-
             android:id="@+id/reg_cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
