@@ -1,4 +1,4 @@
-package com.alsanlab.ecom.reg;
+package com.alsanlab.ecom.SignUp_In;
 
 import androidx.lifecycle.ViewModel;
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".reg.Registration">
+    android:background="#ffffff"
+    tools:context=".SignUp_In.Registration">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,7 +29,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
+
             android:layout_height="180dp"
+            android:layout_margin="10dp"
             android:elevation="6sp"
             app:cardBackgroundColor="@color/colorPrimaryDark"
             app:cardCornerRadius="50dp"
@@ -53,7 +56,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -64,10 +67,12 @@
             android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:elevation="22sp"
             app:cardBackgroundColor="@color/textColor"
             app:cardCornerRadius="60dp"
             app:cardElevation="20dp"
+
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintDimensionRatio="w,16:9"
             app:layout_constraintTop_toTopOf="@+id/guideline"
