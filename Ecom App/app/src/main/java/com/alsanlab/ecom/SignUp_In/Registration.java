@@ -42,34 +42,29 @@ public class Registration extends AppCompatActivity {
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-                final RegModel regModel = new RegModel(name.getText().toString(), password.getText().toString(), email.getText().toString(), phone.getText().toString(), android_id);
-                RetroMethodInterface regdatepost = RetroService.getRetro();
-                Call<RegModel> regdopost = regdatepost.regDo(regModel);
-
+            public void onClick(View v) {
+                RegModel regModel=new RegModel(name.getText().toString(),email.getText().toString(),phone.getText().toString(),password.getText().toString()
+                ,android_id);
+                RetroMethodInterface regdatapost=RetroService.getRetro();
+                Call<RegModel> regdopost=regdatapost.regdo(regModel);
                 regdopost.enqueue(new Callback<RegModel>() {
                     @Override
                     public void onResponse(Call<RegModel> call, Response<RegModel> response) {
-
-
-                        Toast.makeText(Registration.this, response.body().getServerMsg(), Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(Registration.this, response.toString(), Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onFailure(Call<RegModel> call, Throwable t) {
-                        Toast.makeText(Registration.this, "", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Registration.this, t.toString(), Toast.LENGTH_SHORT).show();
 
                     }
                 });
 
-
-
-
-
             }
         });
+
+
+
 
 
     }

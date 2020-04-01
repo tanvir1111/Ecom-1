@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -52,6 +53,7 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<DeviceCheckModel> call, Throwable t) {
+                Toast.makeText(SplashScreen.this, t.toString(), Toast.LENGTH_SHORT).show();
 
             }
         });
